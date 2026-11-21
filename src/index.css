@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Literata", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+
+  --color-surface: #fcf9f3;
+  --color-surface-low: #f6f3ed;
+  --color-surface-container: #f0eee8;
+  --color-surface-high: #ebe8e2;
+  --color-surface-highest: #e5e2dc;
+
+  --color-ink: #1c1c18;
+  --color-ink-muted: #57423b;
+  --color-outline: #dec0b7;
+  --color-outline-strong: #8a726a;
+
+  --color-primary: #9f3c16;
+  --color-primary-container: #bf542c;
+  --color-primary-fixed: #ffdbcf;
+  --color-on-primary: #ffffff;
+  --color-on-primary-fixed: #390c00;
+
+  --color-secondary: #805521;
+  --color-secondary-container: #fec485;
+  --color-secondary-fixed: #ffddbb;
+  --color-on-secondary-container: #653e0b;
+
+  --color-tertiary: #29674b;
+  --color-tertiary-container: #438063;
+  --color-tertiary-fixed: #b0f1cd;
+  --color-on-tertiary-fixed: #002113;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    background-color: var(--color-surface);
+    color: var(--color-ink);
+  }
+
+  h1, h2, h3, .font-editorial {
+    font-family: var(--font-serif);
+    text-wrap: balance;
+  }
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.pb-safe {
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}

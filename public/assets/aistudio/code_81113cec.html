@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;font-family:'Plus Jakarta Sans',sans-serif;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"surface-container-highest":"#e5e2dc","primary-fixed":"#ffdbcf","surface-bright":"#fcf9f3","primary":"#9f3c16","secondary-fixed-dim":"#f5bc7e","surface-container-lowest":"#ffffff","surface-container-low":"#f6f3ed","secondary-fixed":"#ffddbb","on-secondary-container":"#794f1b","background":"#fcf9f3","tertiary":"#29674b","surface-container-high":"#ebe8e2","on-secondary-fixed-variant":"#653e0b","on-secondary-fixed":"#2b1700","on-primary-container":"#fffbff","on-tertiary-fixed-variant":"#0d5137","inverse-primary":"#ffb59c","tertiary-fixed-dim":"#95d4b2","error-container":"#ffdad6","on-error-container":"#93000a","error":"#ba1a1a","on-tertiary-fixed":"#002113","surface":"#fcf9f3","secondary":"#805521","on-surface-variant":"#57423b","tertiary-container":"#438063","inverse-on-surface":"#f3f0ea","secondary-container":"#fec485","tertiary-fixed":"#b0f1cd","primary-fixed-dim":"#ffb59c","outline":"#8a726a","on-primary-fixed-variant":"#822801","surface-container":"#f0eee8","outline-variant":"#dec0b7","surface-dim":"#dcdad4","on-secondary":"#ffffff","on-primary-fixed":"#390c00","on-surface":"#1c1c18","surface-variant":"#e5e2dc","on-primary":"#ffffff","on-error":"#ffffff","on-background":"#1c1c18","on-tertiary":"#ffffff","inverse-surface":"#31312d","on-tertiary-container":"#f5fff6","primary-container":"#bf542c","surface-tint":"#a23e18"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-xl":"2.5rem","space-sm":"0.5rem","margin":"1.5rem","space-xs":"0.25rem","space-md":"1rem","space-lg":"1.5rem","gutter":"1.5rem"},"fontFamily":{"headline-xl":["Literata"],"body-md":["Plus Jakarta Sans"],"headline-lg":["Literata"],"body-lg":["Plus Jakarta Sans"],"label-sm":["Plus Jakarta Sans"],"label-lg":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"],"headline-md":["Literata"]}}};</script><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Literata:wght@600&amp;family=Plus+Jakarta+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 inset-x-0 z-50 bg-surface/80 backdrop-blur-xl pt-safe shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-gutter flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="Ebook App Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQF-wx0jd4En9V-9qGMlkTg_O0C2aqp4WLYnF9D75TXmwdXJJ7D_WyBh05jgdrdSDamfBEKnQtpDEe8xPFcUj6mxFK_zPMNpHVs9aKewlJAcTh1F8WlzW06TsMXFptXPhxRI3ovSGboHdOMuIqmdbbeLF95Joa5qavXm-REqeGlQeGxIF4KAXA384zPqiL1xI4vYHOIqfNgwTf4SiQh40vYJxOXcK_wN9R2zK2h8s"/><span class="font-headline-md text-on-surface font-semibold tracking-tight">Explorar</span></div><div class="flex items-center gap-space-md"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPMs0byH3yVpzANaZXxgWGuFkZ5T_e5Im2nzTccsP6vuxEyykWPIN1XN1ZWKFBuqwcSwwyAE3Ef3EFJhYnXYB1N5-eTpseUd0tuEViRR9mu9ZSgHWgaImXsKkXnJjOy5RpaCgBZf_WwLhjKDcmzq1Nk5orCRkV-Mp6s9TocH5igGGuaS-_A9eH366NVceC4pMk_hojL4pTeQGpP7WpbwYBdrOq_BD3lnzmUAQF4u4"/></div></div></header><main class="flex flex-col relative w-full px-gutter pt-16 bg-surface pb-28"><div class="flex flex-col w-full pb-10">
+<!-- Top Search & Greeting -->
+<div class="flex flex-col gap-space-md mb-space-lg">
+<div class="flex items-center justify-between">
+<div>
+<p class="text-body-sm text-on-surface-variant">Descubra sua próxima leitura</p>
+<h2 class="text-headline-lg font-headline-lg text-on-surface">Explorar o Catálogo</h2>
+</div>
+<button aria-label="Filtros" class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface shadow-sm active:scale-95 transition-transform">
+<span class="material-symbols-outlined">tune</span>
+</button>
+</div>
+<!-- Search Bar -->
+<div class="relative w-full">
+<span class="absolute inset-y-0 left-0 flex items-center pl-4 pointer-events-none text-outline">
+<span class="material-symbols-outlined">search</span>
+</span>
+<input class="w-full pl-12 pr-4 py-3 bg-surface-container-low text-on-surface placeholder:text-outline rounded-full text-body-md focus:outline-none focus:ring-2 focus:ring-primary transition-all shadow-[0_2px_8px_rgba(44,34,30,0.03)]" placeholder="Busque por título, autor ou gênero..." type="text"/>
+<button class="absolute inset-y-1 right-1 px-4 bg-primary text-on-primary rounded-full text-label-md font-medium hover:bg-primary-container transition-colors">
+        Buscar
+      </button>
+</div>
+</div>
+<!-- Categories Carousel -->
+<div class="mb-space-xl">
+<div class="flex items-center justify-between mb-space-sm">
+<h3 class="text-headline-md font-headline-md text-on-surface">Categorias</h3>
+<span class="text-label-md text-primary font-medium">Ver todas</span>
+</div>
+<div class="flex gap-space-sm overflow-x-auto pb-space-xs no-scrollbar -mx-gutter px-gutter">
+<button class="flex items-center gap-space-xs px-space-md py-2.5 rounded-full bg-primary text-on-primary text-label-lg whitespace-nowrap shadow-sm transition-all">
+<span class="material-symbols-outlined text-sm">auto_stories</span>
+        Ficção
+      </button>
+<button class="flex items-center gap-space-xs px-space-md py-2.5 rounded-full bg-surface-container-high text-on-surface text-label-lg whitespace-nowrap hover:bg-surface-container-highest transition-all">
+<span class="material-symbols-outlined text-sm">favorite</span>
+        Romance
+      </button>
+<button class="flex items-center gap-space-xs px-space-md py-2.5 rounded-full bg-surface-container-high text-on-surface text-label-lg whitespace-nowrap hover:bg-surface-container-highest transition-all">
+<span class="material-symbols-outlined text-sm">visibility</span>
+        Mistério
+      </button>
+<button class="flex items-center gap-space-xs px-space-md py-2.5 rounded-full bg-surface-container-high text-on-surface text-label-lg whitespace-nowrap hover:bg-surface-container-highest transition-all">
+<span class="material-symbols-outlined text-sm">psychology</span>
+        Desenvolvimento Pessoal
+      </button>
+<button class="flex items-center gap-space-xs px-space-md py-2.5 rounded-full bg-surface-container-high text-on-surface text-label-lg whitespace-nowrap hover:bg-surface-container-highest transition-all">
+<span class="material-symbols-outlined text-sm">rocket_launch</span>
+        Sci-Fi
+      </button>
+</div>
+</div>
+<!-- Bestsellers Section -->
+<div class="mb-space-xl">
+<div class="flex items-center justify-between mb-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+<h3 class="text-headline-md font-headline-md text-on-surface">Mais Vendidos</h3>
+</div>
+<span class="text-label-md text-outline">Esta semana</span>
+</div>
+<!-- Bestseller Banner Card -->
+<div class="relative bg-surface-container-low rounded-xl p-space-md shadow-[0_4px_20px_rgba(44,34,30,0.06)] flex gap-space-md items-center overflow-hidden">
+<div class="absolute -right-10 -bottom-10 w-32 h-32 bg-secondary-container/20 rounded-full blur-2xl pointer-events-none"></div>
+<div class="w-28 h-40 shrink-0 rounded-lg overflow-hidden shadow-md relative">
+<div class="w-full h-full bg-cover bg-center" data-alt="A textured book cover featuring warm terracotta tones, minimalist typography displaying a bestselling fiction title, cozy armchair illustration in the background, soft lighting." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBAXNEZppVR3SASUEGHEzbQbLEnG5TVjF_ntYFbojm67o5fB-2a-2VBhIH1L3m60hYFRwN8VkVAE5vO8Iqm57TTsmApm1p0GuLNgGLzl76-7Nu6WqozEwMjV1_Sbq4uwqhFIFWSs8dXSOBtyEY7-WoxjBI_jD6OseRHFv5I_KzwY_0pNoAJA0eKTamh_hMawAWj1LaEC0M5eJCd4DrheZCipwhDqhmtDp6mNwO7mrE')"></div>
+</div>
+<div class="flex flex-col justify-between py-1 min-w-0">
+<div>
+<span class="inline-block px-2 py-0.5 rounded bg-primary-fixed text-on-primary-fixed-variant text-label-sm font-bold mb-1">#1 em Ficção</span>
+<h4 class="text-headline-md font-headline-md text-on-surface truncate">A Biblioteca da Meia-Noite</h4>
+<p class="text-body-sm text-on-surface-variant truncate">Matt Haig</p>
+</div>
+<div class="flex items-center gap-1 my-2">
+<span class="material-symbols-outlined text-amber-500 text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-amber-500 text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-amber-500 text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-amber-500 text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-amber-500 text-sm" style="font-variation-settings: 'FILL' 0.5;">star</span>
+<span class="text-label-sm text-on-surface-variant ml-1 font-medium">4.8 (3.2k)</span>
+</div>
+<button class="self-start px-4 py-1.5 bg-primary text-on-primary rounded-full text-label-md font-medium hover:bg-primary-container transition-colors shadow-sm">
+          Ler Amostra
+        </button>
+</div>
+</div>
+</div>
+<!-- Recommendations Grid -->
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<h3 class="text-headline-md font-headline-md text-on-surface">Recomendado para Você</h3>
+<span class="text-label-md text-primary font-medium">Ver todos</span>
+</div>
+<div class="grid grid-cols-2 gap-space-md">
+<!-- Item 1 -->
+<div class="flex flex-col bg-surface-container-low rounded-xl p-space-sm shadow-[0_4px_20px_rgba(44,34,30,0.04)] transition-transform hover:-translate-y-1">
+<div class="w-full h-44 rounded-lg overflow-hidden shadow-sm relative mb-space-sm">
+<div class="w-full h-full bg-cover bg-center" data-alt="An atmospheric book cover for a mystery novel, deep forest green background with an antique key silhouette and golden warm typography, cozy evening mood." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD-hvhLtM9KkvW1MnWs1hvl-AbCnwlLT4FNk-_j5JgQxkSbTkE_-QBaXEiVMPpo9qDNPLpyxRzgACJnLglJTPI8S9nBxD_iz1_nZm7ElwMr8gtZAxgN1qOaXDVtnuqSLCOt5kc-1i_-tTqhvpq2_FZmAzL6TiE0tECEOOYbkZoZiFkGtV3Kq33SgK8yLy-2N1ikdkGxD0CHDinOXeCiARHXED3-pLuSvl7sbXm3EfU')"></div>
+<button aria-label="Favoritar" class="absolute top-2 right-2 w-8 h-8 rounded-full bg-surface/80 backdrop-blur-md flex items-center justify-center text-on-surface shadow-sm">
+<span class="material-symbols-outlined text-sm">favorite</span>
+</button>
+</div>
+<h4 class="text-label-lg font-bold text-on-surface line-clamp-1">A Sombra do Vento</h4>
+<p class="text-body-sm text-on-surface-variant line-clamp-1 mb-2">Carlos Ruiz Zafón</p>
+<div class="flex items-center justify-between mt-auto pt-1">
+<div class="flex items-center gap-0.5">
+<span class="material-symbols-outlined text-amber-500 text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-label-sm font-bold text-on-surface">4.9</span>
+</div>
+<span class="text-label-sm text-primary font-medium">R$ 39,90</span>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="flex flex-col bg-surface-container-low rounded-xl p-space-sm shadow-[0_4px_20px_rgba(44,34,30,0.04)] transition-transform hover:-translate-y-1">
+<div class="w-full h-44 rounded-lg overflow-hidden shadow-sm relative mb-space-sm">
+<div class="w-full h-full bg-cover bg-center" data-alt="A serene self-development book cover featuring soft pastel cream and terracotta abstract shapes, minimalist peaceful typography, sun rays aesthetic." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuADPk9-s5lducmixWXX-eTpUYMUgVeSmM4tzlR_lLM-QliOFdqpjqvtp43rXmC0PrEhvBSdxgXzlyuvVj4XP33Fk1wRfyLy-U70LeohwZckSBjSCZbiPq_D20Hh9Gg5-cuJKv1ERAzoE2fQf2brY9_3NMtVxaCIEVJVDX4IRMZTpvXRnFYeg4okPpYwR17GPUHb5jdNDJx57o0JiVUsqkRKXuE1TD7VCmdpdtDbY4g')"></div>
+<button aria-label="Favoritar" class="absolute top-2 right-2 w-8 h-8 rounded-full bg-surface/80 backdrop-blur-md flex items-center justify-center text-on-surface shadow-sm">
+<span class="material-symbols-outlined text-sm">favorite</span>
+</button>
+</div>
+<h4 class="text-label-lg font-bold text-on-surface line-clamp-1">Hábitos Atômicos</h4>
+<p class="text-body-sm text-on-surface-variant line-clamp-1 mb-2">James Clear</p>
+<div class="flex items-center justify-between mt-auto pt-1">
+<div class="flex items-center gap-0.5">
+<span class="material-symbols-outlined text-amber-500 text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-label-sm font-bold text-on-surface">4.9</span>
+</div>
+<span class="text-label-sm text-primary font-medium">R$ 44,90</span>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="flex flex-col bg-surface-container-low rounded-xl p-space-sm shadow-[0_4px_20px_rgba(44,34,30,0.04)] transition-transform hover:-translate-y-1">
+<div class="w-full h-44 rounded-lg overflow-hidden shadow-sm relative mb-space-sm">
+<div class="w-full h-full bg-cover bg-center" data-alt="A romance novel book cover with warm golden hour lighting, two silhouettes holding hands walking through a field of wheat, cozy and nostalgic feel." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD6wIhLXdWPlBcGRRVZsubIfxwTVzOL_5DBO4neIVRZx57mdrF1_MvvsEzNo1Ru2ifhzx4T76yhhhaQSqAcuTIzG7TDHGzrn4MFgXIyjipDpMkfgNrUFeK0M2DW9g_yXoDKDLo0fQBE4JMrqMGsAQtZ7kNNrZ6dfaSxs-DTGzlhGMSIRuW7xtbSmA3N3O5MKXLwx82Y6uXif2BHGlW_lqq598JLjmhD55Pi8SDkoBA')"></div>
+<button aria-label="Favoritar" class="absolute top-2 right-2 w-8 h-8 rounded-full bg-surface/80 backdrop-blur-md flex items-center justify-center text-on-surface shadow-sm">
+<span class="material-symbols-outlined text-sm">favorite</span>
+</button>
+</div>
+<h4 class="text-label-lg font-bold text-on-surface line-clamp-1">Pessoas Normais</h4>
+<p class="text-body-sm text-on-surface-variant line-clamp-1 mb-2">Sally Rooney</p>
+<div class="flex items-center justify-between mt-auto pt-1">
+<div class="flex items-center gap-0.5">
+<span class="material-symbols-outlined text-amber-500 text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-label-sm font-bold text-on-surface">4.6</span>
+</div>
+<span class="text-label-sm text-primary font-medium">R$ 34,90</span>
+</div>
+</div>
+<!-- Item 4 -->
+<div class="flex flex-col bg-surface-container-low rounded-xl p-space-sm shadow-[0_4px_20px_rgba(44,34,30,0.04)] transition-transform hover:-translate-y-1">
+<div class="w-full h-44 rounded-lg overflow-hidden shadow-sm relative mb-space-sm">
+<div class="w-full h-full bg-cover bg-center" data-alt="A psychological thriller book cover featuring a dark moody navy blue theme with subtle ripples on water, mysterious and intellectual vibe." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBBUyq7_xPD4WJkd2TCMZTb_aWP1kq7g9dds6kGuNNf3LIi5Mohwk9X2MPuC8_lCjKoCNpyeZBGsjztzSrQpDgbzbcuS-pssrDPoQl4GURqQo_ukK_p9HQFxLmB8zlVlBmBubP7EsoIt_VdSmVbneUiWV_DLtJ-oL92XzoZfnCf_Ouu0udBZ3nTku98MSGiDg6jdowBoe8ng9ci2Nsh6aUCDS3nRabY8YNgcV-ObpU')"></div>
+<button aria-label="Favoritar" class="absolute top-2 right-2 w-8 h-8 rounded-full bg-surface/80 backdrop-blur-md flex items-center justify-center text-on-surface shadow-sm">
+<span class="material-symbols-outlined text-sm">favorite</span>
+</button>
+</div>
+<h4 class="text-label-lg font-bold text-on-surface line-clamp-1">A Paciente Silenciosa</h4>
+<p class="text-body-sm text-on-surface-variant line-clamp-1 mb-2">Alex Michaelides</p>
+<div class="flex items-center justify-between mt-auto pt-1">
+<div class="flex items-center gap-0.5">
+<span class="material-symbols-outlined text-amber-500 text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-label-sm font-bold text-on-surface">4.7</span>
+</div>
+<span class="text-label-sm text-primary font-medium">R$ 37,90</span>
+</div>
+</div>
+</div>
+</div>
+</div></main><nav class="fixed bottom-0 inset-x-0 z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-1px_8px_rgba(0,0,0,0.04)]" data-active-classes="bg-primary-container text-on-primary-container font-bold rounded-full"><div class="flex justify-around items-center h-20 px-space-md"><a class="flex flex-col items-center justify-center gap-1 w-16 h-14 text-on-surface-variant hover:text-on-surface transition-all" data-path="biblioteca" href="#"><span class="material-symbols-outlined">book</span><span class="text-label-sm">Biblioteca</span></a><a aria-current="page" class="flex flex-col items-center justify-center gap-1 w-16 h-14 transition-all bg-primary-container text-on-primary-container font-bold rounded-full" data-path="explorar" href="#"><span class="material-symbols-outlined">explore</span><span class="text-label-sm">Explorar</span></a><a class="flex flex-col items-center justify-center gap-1 w-16 h-14 text-on-surface-variant hover:text-on-surface transition-all" data-path="leitor" href="#"><span class="material-symbols-outlined">menu_book</span><span class="text-label-sm">Leitor</span></a><a class="flex flex-col items-center justify-center gap-1 w-16 h-14 text-on-surface-variant hover:text-on-surface transition-all" data-path="perfil" href="#"><span class="material-symbols-outlined">person</span><span class="text-label-sm">Perfil</span></a></div></nav></body></html>

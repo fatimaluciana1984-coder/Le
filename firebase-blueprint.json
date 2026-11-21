@@ -1,0 +1,325 @@
+{
+  "entities": {
+    "UserProfile": {
+      "title": "UserProfile",
+      "description": "Perfil privado do leitor/autor com metas e estatísticas de leitura.",
+      "type": "object",
+      "properties": {
+        "uid": {
+          "type": "string",
+          "maxLength": 128,
+          "pattern": "^[a-zA-Z0-9_\\-]+$"
+        },
+        "displayName": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 100
+        },
+        "email": {
+          "type": "string",
+          "format": "email",
+          "maxLength": 200
+        },
+        "photoURL": {
+          "type": "string",
+          "maxLength": 500
+        },
+        "dailyMinutes": {
+          "type": "number"
+        },
+        "dailyGoalMinutes": {
+          "type": "number"
+        },
+        "annualBooksRead": {
+          "type": "number"
+        },
+        "annualBooksGoal": {
+          "type": "number"
+        },
+        "streakDays": {
+          "type": "number"
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time"
+        }
+      },
+      "required": [
+        "uid",
+        "displayName",
+        "email",
+        "dailyMinutes",
+        "dailyGoalMinutes",
+        "annualBooksRead",
+        "annualBooksGoal",
+        "streakDays",
+        "createdAt",
+        "updatedAt"
+      ]
+    },
+    "CreatorPayout": {
+      "title": "CreatorPayout",
+      "description": "Dados confidenciais de repasse financeiro e verificação de maioridade (+18 anos) do autor.",
+      "type": "object",
+      "properties": {
+        "userId": {
+          "type": "string",
+          "maxLength": 128,
+          "pattern": "^[a-zA-Z0-9_\\-]+$"
+        },
+        "fullName": {
+          "type": "string",
+          "minLength": 3,
+          "maxLength": 120
+        },
+        "birthDate": {
+          "type": "string",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+          "maxLength": 10
+        },
+        "age18Confirmed": {
+          "type": "boolean"
+        },
+        "cpf": {
+          "type": "string",
+          "pattern": "^\\d{11}$",
+          "maxLength": 11
+        },
+        "pixKeyType": {
+          "type": "string",
+          "enum": ["cpf", "email", "telefone", "aleatoria"],
+          "maxLength": 20
+        },
+        "pixKey": {
+          "type": "string",
+          "minLength": 5,
+          "maxLength": 140
+        },
+        "bankName": {
+          "type": "string",
+          "minLength": 2,
+          "maxLength": 80
+        },
+        "termsAccepted": {
+          "type": "boolean"
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time"
+        }
+      },
+      "required": [
+        "userId",
+        "fullName",
+        "birthDate",
+        "age18Confirmed",
+        "cpf",
+        "pixKeyType",
+        "pixKey",
+        "bankName",
+        "termsAccepted",
+        "createdAt",
+        "updatedAt"
+      ]
+    },
+    "Book": {
+      "title": "Book",
+      "description": "Livro digital criado e publicado por um autor na plataforma.",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "maxLength": 128,
+          "pattern": "^[a-zA-Z0-9_\\-]+$"
+        },
+        "authorId": {
+          "type": "string",
+          "maxLength": 128,
+          "pattern": "^[a-zA-Z0-9_\\-]+$"
+        },
+        "authorName": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 100
+        },
+        "title": {
+          "type": "string",
+          "minLength": 2,
+          "maxLength": 140
+        },
+        "synopsis": {
+          "type": "string",
+          "minLength": 10,
+          "maxLength": 1200
+        },
+        "genre": {
+          "type": "string",
+          "enum": ["Ficção", "Romance", "Mistério", "Ensaios", "Poesia", "Desenvolvimento Pessoal"],
+          "maxLength": 40
+        },
+        "coverPreset": {
+          "type": "string",
+          "enum": ["stories", "woods", "midnight", "shadow", "slow"],
+          "maxLength": 20
+        },
+        "content": {
+          "type": "string",
+          "minLength": 20,
+          "maxLength": 120000
+        },
+        "priceCents": {
+          "type": "number"
+        },
+        "status": {
+          "type": "string",
+          "enum": ["draft", "published"],
+          "maxLength": 20
+        },
+        "adultMonetized": {
+          "type": "boolean"
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time"
+        }
+      },
+      "required": [
+        "id",
+        "authorId",
+        "authorName",
+        "title",
+        "synopsis",
+        "genre",
+        "coverPreset",
+        "content",
+        "priceCents",
+        "status",
+        "adultMonetized",
+        "createdAt",
+        "updatedAt"
+      ]
+    },
+    "Purchase": {
+      "title": "Purchase",
+      "description": "Registro imutável de aquisição ou apoio financeiro a um livro publicado.",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "maxLength": 128,
+          "pattern": "^[a-zA-Z0-9_\\-]+$"
+        },
+        "bookId": {
+          "type": "string",
+          "maxLength": 128,
+          "pattern": "^[a-zA-Z0-9_\\-]+$"
+        },
+        "bookTitle": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 140
+        },
+        "buyerId": {
+          "type": "string",
+          "maxLength": 128,
+          "pattern": "^[a-zA-Z0-9_\\-]+$"
+        },
+        "authorId": {
+          "type": "string",
+          "maxLength": 128,
+          "pattern": "^[a-zA-Z0-9_\\-]+$"
+        },
+        "amountCents": {
+          "type": "number"
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time"
+        }
+      },
+      "required": [
+        "id",
+        "bookId",
+        "bookTitle",
+        "buyerId",
+        "authorId",
+        "amountCents",
+        "createdAt"
+      ]
+    },
+    "ReadingProgress": {
+      "title": "ReadingProgress",
+      "description": "Progresso de leitura e marca-página do leitor em um livro.",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "maxLength": 128,
+          "pattern": "^[a-zA-Z0-9_\\-]+$"
+        },
+        "userId": {
+          "type": "string",
+          "maxLength": 128,
+          "pattern": "^[a-zA-Z0-9_\\-]+$"
+        },
+        "bookId": {
+          "type": "string",
+          "maxLength": 128,
+          "pattern": "^[a-zA-Z0-9_\\-]+$"
+        },
+        "percent": {
+          "type": "number"
+        },
+        "bookmarked": {
+          "type": "boolean"
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time"
+        }
+      },
+      "required": [
+        "id",
+        "userId",
+        "bookId",
+        "percent",
+        "bookmarked",
+        "updatedAt"
+      ]
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": { "$ref": "#/entities/UserProfile" },
+      "description": "Dados privados de perfil e metas de leitura do usuário autenticado."
+    },
+    "/creatorPayouts/{userId}": {
+      "schema": { "$ref": "#/entities/CreatorPayout" },
+      "description": "Cadastro confidencial de maioridade (+18 anos), CPF e chave PIX do autor."
+    },
+    "/books/{bookId}": {
+      "schema": { "$ref": "#/entities/Book" },
+      "description": "Livros criados pelos autores; apenas publicados são visíveis publicamente."
+    },
+    "/purchases/{purchaseId}": {
+      "schema": { "$ref": "#/entities/Purchase" },
+      "description": "Compras e repasses vinculados a livros publicados."
+    },
+    "/readingProgress/{progressId}": {
+      "schema": { "$ref": "#/entities/ReadingProgress" },
+      "description": "Progresso de leitura e favoritos por usuário."
+    }
+  }
+}

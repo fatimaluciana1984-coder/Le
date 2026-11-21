@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;font-family:'Plus Jakarta Sans',sans-serif;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"surface-container-highest":"#e5e2dc","primary-fixed":"#ffdbcf","surface-bright":"#fcf9f3","primary":"#9f3c16","secondary-fixed-dim":"#f5bc7e","surface-container-lowest":"#ffffff","surface-container-low":"#f6f3ed","secondary-fixed":"#ffddbb","on-secondary-container":"#794f1b","background":"#fcf9f3","tertiary":"#29674b","surface-container-high":"#ebe8e2","on-secondary-fixed-variant":"#653e0b","on-secondary-fixed":"#2b1700","on-primary-container":"#fffbff","on-tertiary-fixed-variant":"#0d5137","inverse-primary":"#ffb59c","tertiary-fixed-dim":"#95d4b2","error-container":"#ffdad6","on-error-container":"#93000a","error":"#ba1a1a","on-tertiary-fixed":"#002113","surface":"#fcf9f3","secondary":"#805521","on-surface-variant":"#57423b","tertiary-container":"#438063","inverse-on-surface":"#f3f0ea","secondary-container":"#fec485","tertiary-fixed":"#b0f1cd","primary-fixed-dim":"#ffb59c","outline":"#8a726a","on-primary-fixed-variant":"#822801","surface-container":"#f0eee8","outline-variant":"#dec0b7","surface-dim":"#dcdad4","on-secondary":"#ffffff","on-primary-fixed":"#390c00","on-surface":"#1c1c18","surface-variant":"#e5e2dc","on-primary":"#ffffff","on-error":"#ffffff","on-background":"#1c1c18","on-tertiary":"#ffffff","inverse-surface":"#31312d","on-tertiary-container":"#f5fff6","primary-container":"#bf542c","surface-tint":"#a23e18"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-xl":"2.5rem","space-sm":"0.5rem","margin":"1.5rem","space-xs":"0.25rem","space-md":"1rem","space-lg":"1.5rem","gutter":"1.5rem"},"fontFamily":{"headline-xl":["Literata"],"body-md":["Plus Jakarta Sans"],"headline-lg":["Literata"],"body-lg":["Plus Jakarta Sans"],"label-sm":["Plus Jakarta Sans"],"label-lg":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"],"headline-md":["Literata"]}}};</script><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Literata:wght@600&amp;family=Plus+Jakarta+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 inset-x-0 z-50 bg-surface/80 backdrop-blur-xl pt-safe shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-gutter flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="Ebook App Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQF-wx0jd4En9V-9qGMlkTg_O0C2aqp4WLYnF9D75TXmwdXJJ7D_WyBh05jgdrdSDamfBEKnQtpDEe8xPFcUj6mxFK_zPMNpHVs9aKewlJAcTh1F8WlzW06TsMXFptXPhxRI3ovSGboHdOMuIqmdbbeLF95Joa5qavXm-REqeGlQeGxIF4KAXA384zPqiL1xI4vYHOIqfNgwTf4SiQh40vYJxOXcK_wN9R2zK2h8s"/><span class="font-headline-md text-on-surface font-semibold tracking-tight">Leitor</span></div><div class="flex items-center gap-space-md"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPMs0byH3yVpzANaZXxgWGuFkZ5T_e5Im2nzTccsP6vuxEyykWPIN1XN1ZWKFBuqwcSwwyAE3Ef3EFJhYnXYB1N5-eTpseUd0tuEViRR9mu9ZSgHWgaImXsKkXnJjOy5RpaCgBZf_WwLhjKDcmzq1Nk5orCRkV-Mp6s9TocH5igGGuaS-_A9eH366NVceC4pMk_hojL4pTeQGpP7WpbwYBdrOq_BD3lnzmUAQF4u4"/></div></div></header><main class="flex flex-col relative w-full px-gutter pt-16 bg-surface pb-28"><div class="flex flex-col w-full min-h-[707px] relative selection:bg-primary-fixed selection:on-primary-fixed">
+<!-- Top Reader Controls Bar (Discrete) -->
+<div class="flex items-center justify-between py-3 mb-space-md text-on-surface-variant border-b border-surface-container-highest/60">
+<div class="flex items-center gap-space-sm">
+<button aria-label="Ajustes de Tipografia e Tema" class="p-2 rounded-full hover:bg-surface-container-high transition-colors flex items-center justify-center" onclick="toggleSettings()">
+<span class="material-symbols-outlined text-[20px]">text_format</span>
+</button>
+<button aria-label="Ouvir Audiobook" class="p-2 rounded-full hover:bg-surface-container-high transition-colors flex items-center justify-center" onclick="toggleAudio()">
+<span class="material-symbols-outlined text-[20px]">headphones</span>
+</button>
+</div>
+<div class="flex items-center gap-space-xs text-label-md tracking-wider font-headline-md opacity-80">
+<span>Capítulo 12</span>
+<span class="text-outline-variant">•</span>
+<span>A Sombra do Vento</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<button aria-label="Adicionar Marca-página" class="p-2 rounded-full hover:bg-surface-container-high transition-colors flex items-center justify-center text-primary" onclick="toggleBookmark(this)" style="font-variation-settings: 'FILL' 1;">
+<span class="material-symbols-outlined text-[20px]">bookmark</span>
+</button>
+</div>
+</div>
+<!-- Reader Settings Modal/Drawer (Hidden by default) -->
+<div class="hidden mb-space-lg p-space-md bg-surface-container-low rounded-xl shadow-lg flex flex-col gap-space-md transition-all" id="reader-settings">
+<div class="flex items-center justify-between">
+<span class="text-label-lg font-bold">Aparência da Página</span>
+<button class="text-on-surface-variant hover:text-on-surface" onclick="toggleSettings()"><span class="material-symbols-outlined text-[18px]">close</span></button>
+</div>
+<div class="grid grid-cols-3 gap-space-sm">
+<button class="p-3 rounded-lg bg-[#fcf9f3] text-[#1c1c18] border border-outline-variant/30 text-label-md font-medium text-center shadow-sm" onclick="setTheme('cream')">Clássico</button>
+<button class="p-3 rounded-lg bg-[#f4ecd8] text-[#4a3b32] border border-outline-variant/30 text-label-md font-medium text-center shadow-sm" onclick="setTheme('sepia')">Sépia</button>
+<button class="p-3 rounded-lg bg-[#1f2421] text-[#d8dad3] border border-outline-variant/30 text-label-md font-medium text-center shadow-sm" onclick="setTheme('night')">Noturno</button>
+</div>
+<div class="flex items-center justify-between pt-2">
+<span class="text-body-sm text-on-surface-variant">Tamanho da Fonte</span>
+<div class="flex items-center gap-space-sm">
+<button class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface font-bold text-sm" onclick="adjustFontSize(-1)">-</button>
+<span class="text-body-sm font-bold w-6 text-center" id="font-size-indicator">18px</span>
+<button class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface font-bold text-sm" onclick="adjustFontSize(1)">+</button>
+</div>
+</div>
+</div>
+<!-- Book Page Content -->
+<div class="flex-1 flex flex-col justify-between px-2 sm:px-8 py-space-sm transition-colors duration-300" id="reader-page">
+<div class="space-y-6">
+<p class="font-headline-lg text-[19px] leading-[1.8] text-on-surface tracking-wide text-justify first-letter:text-5xl first-letter:font-headline-xl first-letter:float-left first-letter:mr-3 first-letter:text-primary" id="book-text">
+        O sol começava a desvanecer-se por entre as torres antigas de Barcelona, projetando sombras compridas sobre as calçadas de paralelepípedos. Fermín caminhava ao meu lado em silêncio, absorvido em seus próprios pensamentos labirínticos. Aquela manhã na livraria deixara marcas profundas em nossa percepção do passado. Cada volume guardado naqueles corredores escuros parecia pulsar com uma vida própria, esperando pacientemente pelo momento em que um espírito curioso viesse resgatá-lo do esquecimento eterno.
+      </p>
+<p class="font-headline-lg text-[19px] leading-[1.8] text-on-surface tracking-wide text-justify">
+        — Sabe, Daniel — disse ele de repente, quebrando a penumbra com sua voz rouca e teatral —, os livros são espelhos: nelas só se vê o que já se tem dentro do próprio coração.
+      </p>
+<p class="font-headline-lg text-[19px] leading-[1.8] text-on-surface tracking-wide text-justify">
+        As palavras ecoaram na quietude da tarde. Olhei para a capa gasta do exemplar que levava sob o braço, sentindo o relevo das letras douradas desbotadas pelo tempo. O mistério que nos envolvia parecia adensar-se a cada página virada, como um segredo sussurrado pelo vento entre as muralhas da cidade velha.
+      </p>
+</div>
+<!-- Delightful Page Footer / Progress Bar -->
+<div class="mt-space-xl pt-space-md pb-space-lg flex flex-col gap-3">
+<div class="flex items-center justify-between text-label-sm text-on-surface-variant font-medium tracking-wide">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-primary">auto_stories</span>
+          Página 142 de 320
+        </span>
+<span class="text-primary font-bold">44% lido</span>
+</div>
+<!-- Custom Interactive Progress Track -->
+<div class="relative w-full h-2 bg-surface-container-highest rounded-full overflow-hidden cursor-pointer group" onclick="updateProgress(event)">
+<div class="absolute top-0 left-0 h-full bg-primary rounded-full transition-all duration-200" id="progress-bar" style="width: 44%;"></div>
+<div class="absolute top-1/2 -translate-y-1/2 left-[44%] -translate-x-1/2 w-3.5 h-3.5 bg-primary-container border-2 border-surface rounded-full shadow-md scale-0 group-hover:scale-100 transition-transform"></div>
+</div>
+</div>
+</div>
+<!-- Interactive JavaScript -->
+<script>
+    function toggleSettings() {
+      const settings = document.getElementById('reader-settings');
+      settings.classList.toggle('hidden');
+    }
+
+    function toggleBookmark(btn) {
+      const isFilled = btn.style.fontVariationSettings.includes("'FILL' 1");
+      if (isFilled) {
+        btn.style.fontVariationSettings = "'FILL' 0";
+        btn.classList.remove('text-primary');
+        btn.classList.add('text-on-surface-variant');
+      } else {
+        btn.style.fontVariationSettings = "'FILL' 1";
+        btn.classList.remove('text-on-surface-variant');
+        btn.classList.add('text-primary');
+      }
+    }
+
+    function setTheme(theme) {
+      const page = document.getElementById('reader-page');
+      const text = document.getElementById('book-text');
+      if (theme === 'cream') {
+        page.style.backgroundColor = '#fcf9f3';
+        page.style.color = '#1c1c18';
+      } else if (theme === 'sepia') {
+        page.style.backgroundColor = '#f4ecd8';
+        page.style.color = '#3b2f27';
+      } else if (theme === 'night') {
+        page.style.backgroundColor = '#161917';
+        page.style.color = '#e3e6e1';
+      }
+    }
+
+    let currentFontSize = 19;
+    function adjustFontSize(delta) {
+      currentFontSize = Math.max(14, Math.min(26, currentFontSize + delta));
+      document.getElementById('font-size-indicator').innerText = currentFontSize + 'px';
+      const paragraphs = document.querySelectorAll('#reader-page p');
+      paragraphs.forEach(p => {
+        p.style.fontSize = currentFontSize + 'px';
+        p.style.lineHeight = (currentFontSize * 1.5) + 'px';
+      });
+    }
+
+    function updateProgress(event) {
+      const track = event.currentTarget;
+      const rect = track.getBoundingClientRect();
+      const clickX = event.clientX - rect.left;
+      const width = rect.width;
+      const percentage = Math.max(0, Math.min(100, Math.round((clickX / width) * 100)));
+      
+      document.getElementById('progress-bar').style.width = percentage + '%';
+      
+      const pageNum = Math.round((percentage / 100) * 320);
+      const label = document.querySelector('.mt-space-xl .flex span:first-child');
+      label.innerHTML = `<span class="material-symbols-outlined text-[14px] text-primary">auto_stories</span> Página ${pageNum} de 320`;
+      
+      const percentLabel = document.querySelector('.mt-space-xl .flex span:last-child');
+      percentLabel.innerText = percentage + '% lido';
+    }
+
+    function toggleAudio() {
+      alert("Iniciando player de áudio integrado (Modo Imersivo)...");
+    }
+  </script>
+</div></main><nav class="fixed bottom-0 inset-x-0 z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-1px_8px_rgba(0,0,0,0.04)]" data-active-classes="bg-primary-container text-on-primary-container font-bold rounded-full"><div class="flex justify-around items-center h-20 px-space-md"><a class="flex flex-col items-center justify-center gap-1 w-16 h-14 text-on-surface-variant hover:text-on-surface transition-all" data-path="biblioteca" href="#"><span class="material-symbols-outlined">book</span><span class="text-label-sm">Biblioteca</span></a><a class="flex flex-col items-center justify-center gap-1 w-16 h-14 text-on-surface-variant hover:text-on-surface transition-all" data-path="explorar" href="#"><span class="material-symbols-outlined">explore</span><span class="text-label-sm">Explorar</span></a><a aria-current="page" class="flex flex-col items-center justify-center gap-1 w-16 h-14 transition-all bg-primary-container text-on-primary-container font-bold rounded-full" data-path="leitor" href="#"><span class="material-symbols-outlined">menu_book</span><span class="text-label-sm">Leitor</span></a><a class="flex flex-col items-center justify-center gap-1 w-16 h-14 text-on-surface-variant hover:text-on-surface transition-all" data-path="perfil" href="#"><span class="material-symbols-outlined">person</span><span class="text-label-sm">Perfil</span></a></div></nav></body></html>

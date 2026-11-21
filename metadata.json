@@ -1,0 +1,6 @@
+{
+  "name": "Ateliê Literário",
+  "description": "Plataforma de criação, publicação, leitura e monetização (+18) de livros digitais com conta Google, banco de dados Firestore e exportação HTML5.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
